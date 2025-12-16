@@ -1,0 +1,27 @@
+Classes & Objects
+Objects are entities(any real world ) in the real world
+Class is like a blueprint of these entities 
+Ex - Let Toyota be an name and it has a blueprint so we can create car1 car2 car3 using the blueprint and these cars are the objects and each one is different from each other.
+
+Ex - Let in college we create system that stores all the information like name,dept,subject & salary about all the teachers.
+
+This information are known as properties/props i.e some values that associates with this entity i.e object.Teacher is the entity which has it's own properties.
+
+There might be some extra functions like changing dept of the teacher so the function is changeDept().Functions are also called as methods hence method is a function which is written inside a class 
+
+Teacher is the the object and and it has properties and functions associated with it 
+
+For classes and objects we create our own functions  
+
+To right this correctly
+Class BP 
+Obj1 T1
+Obj2 T2
+Obj3 T3
+
+Syntax of class:
+Class Teacher{
+    .....
+}; 
+
+Syntax of object:
