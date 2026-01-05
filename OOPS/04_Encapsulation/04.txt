@@ -1,0 +1,6 @@
+Encapsulation(remember as capsule wraps everything) is wrapping up of data & member functions in a single unit called class. 
+creating a class and declaring properties and methods is called Encapsulation.
+
+It helps us in data hiding(means hiding sensitive information) by using private access modifiers
+
+By creating the class we can access modifiers & by using access modifiers we can hide data

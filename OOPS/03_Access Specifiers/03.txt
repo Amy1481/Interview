@@ -1,0 +1,18 @@
+Access modifiers afe special keyword(Special reserved word).We have 3 access modifiers:
+Private-Any data/properties & methods that are accessible inside class only.By default everything inside c++ code is private
+Public-Any data/properties & methods that are accessible to everyone.
+Protected-Any data/properties & methods that are accessible inside class & to its derived class(used in inheritance).
+ If we want to print the salary then we can create a special function in public
+Setter function is used to set private values 
+  void setSalary(double s){
+    salary=s;
+  }
+Getter function is used to get the values of private values
+  double getSalary() {
+    return salary;
+  }
+
+int main(){
+    t1.setSalary(25000);
+    cout<<t1.getSalary()<<endl;
+}
