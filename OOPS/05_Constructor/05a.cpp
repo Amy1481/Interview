@@ -23,10 +23,9 @@ public:
         return salary;
     }
 
-    // Constructor same name as class but it is a function and doesn't have return type(return type void,string,int,boolean,float nothing) & it is always public as we call constructor and in private we can't access it 
+//    Non-Parameterized constructor
     Teacher() {
-        cout<< "Hey,I am a constructor";
-        //to initialize the value we can write that dept of al the teachers are same so we don't have to write it many times
+        cout<< "Hey,I am a non-parameterized constructor";
         dept="CS";
     }
 };

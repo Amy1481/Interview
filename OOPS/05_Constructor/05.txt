@@ -4,4 +4,15 @@ Special method invoked automatically at time of object creation.Used for initial
 Same name as class
 Constructor doesn't have a return type
 Only called once(automatically),at object creation
-Memory allocation happens when constructor is created
+Memory allocation happens when constructor is created that means class is just a blueprint it does not take space in memory but the objects created by it will occupy space in memory thus this is memory allocation i.e the data members inside the objects occupy space in memory & if we to initialize the values of this data members we use constructor.Even if we don't create constructor c++ creates its own automatically for us.
+
+We can create multiple constructor inside a single class but they can have same name but they should have different PARAMETERS or different types.This phenomenon/concept inside Programming is known as constructor overloading(example of polymorphism).
+
+Constructors are of three types:
+1.Non-Parameterized-It means it has no parameters i.e function has no parameter(nothing inside parenthesis)
+2.Parameterized-It has parameters.
+3.Copy-Special constructor (default) used to copy properties of one object into another & it also creates the same exact memory space as the original object.We can create our own copy constructor
+
+Default one
+Teacher t2(t1);
+t2.getInfo();

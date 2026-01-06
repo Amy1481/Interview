@@ -1,0 +1,20 @@
+this is a special pointer in c++ that points to the current object.It comes under constructor.
+
+Two ways to write this pointer
+this->property
+*(this).property
+
+Example:
+For any obj1 we are calling its function i.e 
+obj1.func()
+
+Now this function wants to reference the objects properties.So either it can access the properties by writing prop or we can write this->prop saying the same thing.
+
+What does this do?
+It points to the objects memory address this is automatically pointing variable that points to the object calling function
+
+Let we want to access x
+int x=10;
+int *ptr=&x;
+Here * means dereferencing operator which means the value that pointer is pointing to x value i.e 10 thus *ptr means 10 
+*this means we are talking about our object.Similarly if we want to write obj.prop then we can write (*this).prop Similar as this->prop
