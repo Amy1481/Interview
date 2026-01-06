@@ -1,0 +1,15 @@
+Copy constructor
+Copy-Special constructor (default) used to copy properties of one object into another & it also creates the same exact memory space as the original object.We can create our own copy constructor
+
+Default one
+Teacher t2(t1);
+t2.getInfo();
+
+Copy constructor is of 2 types 
+Shallow copy of an object copies all of the member values from one object to another just like default copy constructor.There is no problem in copying but problem arrives when we perform dynamic memory allocation(means when we create a new memory using new keyword when we allocating pointers) then we face problems.Normally or memories created are created by stack as in all the main functions are created inside this stack memory & all the variables called are created inside stack memory.But when we create new memory allocation thus this memory allocates during run time i.e
+int x=5; Here x is created and stored in stack and memory will be allocated in compile time
+
+new int[5]; This creates a new keyword isn't present in stack but it is present inside heap(a special area of memory) inside which this dynamic memory is allocated.Thus heap is basically the dynamic memory allocation.And any class object function pointer pointing properties have values inside heap creates problem  
+
+
+Deep copy on the other hand not only copies the member values but also makes copies of any dynamically allocated memory that the members point to
