@@ -1,85 +1,55 @@
 #include<iostream>
 using namespace std;
+  
 
-// Encapsulation(Created a class which has declared properties & methods inside the class)
-class Teacher {
-private:
-    double salary;
-
-public:
-    string name;
-    string dept;
-    string subject;
-
-    void changeDept(string newDept){
-        dept=newDept;
-    }
-
-//    Non-Parameterized constructor
-// Teacher() {
-//     cout<< "Hey,I am a non-parameterized constructor";
-//     dept="CS";
-// }
+// Shallow copy constructor
+class Student {
+    public:
+    // This properties are running on statically allocated memory,all this was created in stack memory thus we will not store grade directly but we will convert the value of grade into pointer 
+     string name;
+    //  double grade;
+    // This is grade pointer 
+    double* gradePtr;
 
 
-// Parameterized constructor
-    Teacher(string n,string d,string sub,double sal) {
-        cout<< "Hey,I am a parameterized constructor";
-        // name=n;
-        // dept=d;
-        // subject=sub;
-        // salary=sal;
-
-        // name=name;
-        // dept=dept;
-        // subject=subject;
-        // salary=salary;
-        
-        //This differentiate between class properties(this->prop) and parameter values(name,dept,subject,salary)
+     Student(string name,double grade){
         this->name=name;
-        this->dept=dept;
-        this->subject=subject;
-        this->salary=salary;
-    }
+        // this->grade=grade;
+        // Now we will allocate new memory to the grade pointer.Previously the pointer wasn't pointing anywhere inside memory but now we made it point to a special type of memory i.e double type memory which can store float type data & this new dynamically allocated memory is inside our heap
+        gradePtr = new double;
+        // Now the grade pointer which it was pointing to(the memory address) by dereferencing it we have stored the grade
+        *gradePtr = grade;
+     }
 
+     //Copy constructor 
+     Student(Student &obj){
+        this->name=obj.name;
+        // we created new double and he gradePtr points to the new double i.e we created new dynamically allocated memory
+        gradePtr=new double;
+        // Then we will copy the value of Student &obj inside *gradePtr that means the value our gradePtr is pointing to,we are going to store the same value inside *gradePtr of our object that means creating 2 copys having same grade inside heap memory then we will change the value of s2 object
+        *gradePtr=*obj.gradePtr;
+     }
 
-// Copy constructor
-// We will create Teacher constructor and inside the constructor we will basically have Teacher type object and this object we will pass it by reference 
-    Teacher(Teacher &orgObj){ //Pass by reference means call by value call by reference in c++ functions i.e the Teacher &orgObj is not the copy of the original object but it is the original object itself which means address of original object is passed thus any changes in this constructor will be reflected inside the original object
-        cout << "Hey I am custom copy constructor\n";
-        this->name=orgObj.name;
-        this->dept=orgObj.dept;
-        this->subject=orgObj.subject;
-        this->salary=orgObj.salary;
-    }
-
-    // Now we will create new function i.e getInfo() that will cout all the information about our teacher
-    void getInfo(){
-       cout<<"Name : "<<name<<endl;
-       cout<<"Department : "<<dept<<endl;
-
-    } 
-    
+     void getInfo() {
+        cout<<"Name : "<<name<<endl;
+        cout<<"Grade : "<<*gradePtr<<endl;
+     }
 };
 
 int main(){
-    // We are not going to create values like this we will just pass them in t1's parenthesis 
-    Teacher t1("Amy","CS","OOPs",25000); //Constructor call
-    // Teacher t2(); //Again calls constructor
-    // t1.name="Amy";
-    // t1.dept="CS";
-    // t1.subject="OOPs";
-    // t1.setSalary(25000);
+   Student s1("Alex",8.9);
+//    s1.getInfo();
 
-    // cout<< t1.name << endl;
-    // cout<<t1.dept;
-    // Instead of calling each property indivisually
-    // t1.getInfo();
+   s1.getInfo(); //Prints the s1 values
+// We want to copy the data of s1 to s2
+   Student s2(s1);
+   *(s2.gradePtr) = 9.2;
+//    s2.getInfo();
+    s1.getInfo(); //Prints the changed grade value & this happened cause of dynamically allocated memory cause of shallow copy 
+    
+    s2.name="Noah";
+    s2.getInfo();
 
-    // Copy Constructor(Default)
-    // Copies the same properties & values as t1
-    Teacher t2(t1); //default copy constructor invoked/called
-    t2.getInfo();
     return 0;
 }
 

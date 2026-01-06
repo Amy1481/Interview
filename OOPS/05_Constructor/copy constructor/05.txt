@@ -14,4 +14,4 @@ new int[5]; This creates a new keyword isn't present in stack but it is present 
 The pointer grade is pointing to same address as shallow copy just copied the address of s1 thus both point to same address.Hence if we change the value of the address of grade it will eventually change the value of grade of s1 as the value is changed in address and s1 grade pointer is also pointing to the same address 
 
 
-Deep copy on the other hand not only copies the member values but also makes copies of any dynamically allocated memory that the members point to
+Deep copy on the other hand not only copies the member values but also makes copies of any dynamically allocated memory that the members point to.It says if you want to create a deep copy then create it yourself.Thus we create a new memory allocated to the s2 object and then store the address in the pointer of s2.Hence both will point to their respective addresses i.e we made a copy of heap memory thus known as deep copy.
