@@ -11,5 +11,7 @@ int x=5; Here x is created and stored in stack and memory will be allocated in c
 
 new int[5]; This creates a new keyword isn't present in stack but it is present inside heap(a special area of memory) inside which this dynamic memory is allocated.Thus heap is basically the dynamic memory allocation.And any class object function pointer pointing properties have values inside heap creates problem  
 
+The pointer grade is pointing to same address as shallow copy just copied the address of s1 thus both point to same address.Hence if we change the value of the address of grade it will eventually change the value of grade of s1 as the value is changed in address and s1 grade pointer is also pointing to the same address 
+
 
 Deep copy on the other hand not only copies the member values but also makes copies of any dynamically allocated memory that the members point to
