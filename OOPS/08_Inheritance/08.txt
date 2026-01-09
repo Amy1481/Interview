@@ -1,0 +1,8 @@
+Inheritance
+When properties & member functions of base class are passed on to the derived class that means when parent passes its qualities to the child i.e class A(parent,base) passes properties to class B(child,derived) thus class B inherits from class A.
+
+Inheritance is used for code reusability which means instead of rewriting the same properties again in child class we can inherit it from class A.
+
+When Inheritance is taking place and we create an object of the child class B then base class's constructor is called first after that derived class's constructor is called.
+
+The opposite goes for destructor:When an object goes out of scope/deallocated,then first child class's memory is deallocated then base class's memory is deallocated.
