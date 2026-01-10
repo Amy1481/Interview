@@ -1,0 +1,8 @@
+Friend can be class or function.
+A friend class is special that can access private & protected members of another class.
+
+Here only class B defined as friend as access the members but the class A cannot access the friend class B's members as the friend class B didn't defined the class A as friend thus it is one-sided friendship.
+
+A friend function is a special function that can access private & protected members.A friend function can be a:
+1.Global function
+2.A function/method of another class
