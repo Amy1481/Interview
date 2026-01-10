@@ -1,0 +1,35 @@
+Types of Inheritance
+1.Single Inheritance
+When one parent class passes on properties to one child class.
+parent
+   |
+child
+
+
+2.Multi-Level Inheritance
+When inheritance is happening at multiple levels.
+a)parent      b) parent
+   |               |
+  parent         child
+   |               |
+  child          child
+
+3.Multiple Inheritance
+When one child class inherits properties of 2 or more parent classes
+parent          parent
+    \          /
+        child
+
+4.Hierarchial Inheritance
+When one parent class passes on it's properties to multiple child classes
+       parent
+    /         \
+child         child
+
+5.Hybrid Inheritance
+It is a mix of all kind of inheritance
+        _____
+      /       \
+    _____    _____
+               |
+             _____

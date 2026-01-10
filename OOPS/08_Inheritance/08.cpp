@@ -51,10 +51,10 @@ class Student : public Person {
 };
 
 int main() {
-    Student s1;
-    s1.name="Amy";
-    s1.age=21;
-    s1.rollNo=1234;
+    Student s1("Amy",21,1234);
+    // s1.name="Amy";
+    // s1.age=21;
+    // s1.rollNo=1234;
 
     s1.getInfo();
 

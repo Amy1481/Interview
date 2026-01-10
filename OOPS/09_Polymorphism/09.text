@@ -1,0 +1,16 @@
+Polymorphism
+It is the ability of objects to take on different forms or behave in different ways depending on the context in which they are used.
+Polymorphism is used of two words poly(multiple) & morph(forms) such as constructor overloading
+
+-Compile time Polymorphism(at compile time we know what the output is gonna be and is static)
+Example: a) constructor overloading-Constructor overloading means  we have 2 or more constructors having same name but different parameters(no of parameters different or type of parameters are different)
+         b) function overloading-It ia an example or implementation of compile time Polymorphism.Function overloading is having two or more functions having same name in same single class but they differ only in their parameters & return type can be same or different. 
+
+         c) operator overloading-
+-Run time Polymorphism(at run time it is decided what the output gonna be and it is dynamic) 
+Example: a) function overriding-It is based on inheritance.Parent and child both contain the same function with different implementation(same name name parameters but different parameters).The parent class function is said to be overridden.
+
+         b) virtual functions-It ia a member function that you expect to be redefined in derived class.They have some properties such as:
+          -dynamic in nature
+          -defined by the keyword "virtual" inside a base class & are always declared with a base & overridden in a child class
+          -called during runtime 

@@ -1,0 +1,9 @@
+Modes of Inheritance
+
+               Derived class   Derived class   Derived class
+BASE CLASS     Private mode    Protected mode  Public mode
+Private        Not inherited   Not inherited   Not inherited
+Protected      Private         Protected       Protected
+Public         Private         Protected       Public
+
+Mostly protected is used in inheritance if we want to use private access modifiers.
