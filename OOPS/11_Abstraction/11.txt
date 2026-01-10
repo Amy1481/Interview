@@ -1,0 +1,11 @@
+Abstraction
+Hiding all unnecessary details & showing only the important parts.1.1)Access modifiers-The simplest way to implement abstraction is by using access modifiers by making unnecessary/sensitive details private and important things public and those which we want to keep private but which should be inherited them as protected.
+
+2)Abstract classes-It is another way to implement abstraction.It never creates an object.It becomes blueprint of other classes such as class is a blueprint that creates obj1,obj2,obj3 , similarly abstract class is the blueprint for creating class1,class2 and used only for inheritance.It has some properties such as:
+   -It is used to provide a base class from which other classes are derived.
+   -They cannot be instantiated(objects cannot be created in abstract class) & are meant to be inherited.
+   -Abstract classes are typically used to define an interface/template/blueprint for derived classes.
+
+The difference between data hiding and abstraction:
+Data hiding only hides the data.
+Abstraction hides the data but also shows important things
