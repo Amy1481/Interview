@@ -1,0 +1,7 @@
+Javascript is a technology that we use to create websites.JS makes websites more interactive.
+JS is case sensitive
+We give instructions(code) to the computer
+The computer follows our instructions(running this code)
+
+JS Language
+Syntax-rules we have to follow when we use a programming languages
