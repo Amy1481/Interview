@@ -1,0 +1,1 @@
+alert("Amisha"); //In console
