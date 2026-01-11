@@ -1,0 +1,30 @@
+String  represents text
+alert('Hello');
+
+Syntax for string:
+1) Single quotes '...' 
+2) Double quotes "..."
+3) Back ticks/Template strings `...`
+text should always be inside single quote
+
+We can add strings
+'some' + 'text'
+
+Value of strings
+typeof 2 - Numbers
+typeof 'hello' - String
+
+'hello' + 3 = 'hello3'
+Js converts the number 3 to string 3 i.e '3' thus this is called type coercion(automatic type conversion)
+
+character = 
+1 letter(a,b,c)
+1 number(1,2,3)
+1 symbol(#,@,&)
+Escape character (Single quote \' , Double quote \" , Newline character \n)
+
+Back ticks/Template strings has some features
+1.Interpolation - Insert value directly into a string (`${....}`)
+2.Multi line strings  `.....
+                       .....`
+
