@@ -1,1 +1,0 @@
-alert("Amisha"); //In console

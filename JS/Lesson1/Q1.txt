@@ -1,0 +1,184 @@
+🟢 Easy
+
+1.What is JavaScript?
+JavaScript is a high level,interpreted programming language used to make websites interactive & dynamic.It runs in browser and also on servers like node.js
+
+JavaScript is a programming language that can be used on both the server side and client side of applications(book definition).
+
+2.What is the use of console.log()?
+It displays output in the browser console.
+
+The console is used by developers to log what is going on and do any debugging.Debugging is finding the problem when an application is not displaying the desired behavior. The console gives some insights as to what is happening if you log sensible messages.
+
+3.What is debugging?
+Debugging is finding the problem when an application is not displaying the desired behavior.
+
+4.What is a script tag?
+It is an html tag used to write or link javascript in HTML.
+
+5.What is a browser?
+A browser is a software used to open and run webpages.
+
+6.How does the browser understand JavaScript?
+JavaScript is an interpreted language, which means that the computer understands it while running it. Some languages get processed before running, this is called compiling, but not JavaScript. The computer can just interpret JavaScript on the fly The "engine" that understands JavaScript will be called the interpreter here.
+
+7.What is webpage?
+A web page isn't just JavaScript. Web pages are written in three languages: HTML,CSS, and JavaScript.
+
+HTML determines what is on the page; the content of the page is in there.HTML consists of elements, also called tags. They specify what is on the page. 
+
+CSS is the layout of the web page. So for example, if the text color is blue, this is done by CSS. Font size, font family, and position on the page are all determined by CSS.
+
+JavaScript is the final piece in the puzzle, which defines what the web page can do and how it can interact with the user or the backend.
+
+8.What is HTML?
+HTML determines the content/structure of the webpage.It consists of elements also called tags,they specify the contents/what is on the page.
+
+🟡 Medium
+
+1.How does JavaScript run inside a browser?
+Javascript is an interpreted language which means the computer understands it while running it.Some languages get processed even before running,this is called compiling, but not javascript.Computer can interpret javascript on fly.The "engine" that understands javascript is known as interpreter here.
+
+
+2.What is the difference between client-side and server-side JS?
+Client-side runs in browser whereas server-side runs on server using node.js
+
+The server side of an application is the backend logic that usually runs on computers in data centers and interacts with the database,while the client side is what runs on the device of the user, often the browser for JavaScript.
+
+3.Why is JavaScript called an interpreted language?
+Javascript is an interpreted language which means the computer understands js code while running it.Some languages get processed even before running,this is called compiling, but not javascript.JavaScript runs directly without compiling.The computer interpret javascript on fly.The "engine" that understands javascript is known as interpreter here. 
+
+4.What is the role of the JS engine?
+The javascript engine is the part of browser that interprets/understands javascript & executes the javascript code.The engine is known as javascript interpreter.
+
+5.Why should scripts be placed at the end of <body>?
+The script is placed at the end of the body because it prevents blocking the html loading.
+
+🔵 Hard
+
+1.Compare internal and external JavaScript.
+
+| Feature           | Internal JavaScript                                                  | External JavaScript                                                                                     |
+| ----------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **Definition**    | Code is written directly inside the `<script>` tag in the HTML file. | Code is written in a separate `.js` file and linked to the HTML using the `<script src="file.js">` tag. |
+| **Location**      | Inside `<head>` or `<body>` of HTML.                                 | Stored outside HTML in a separate file.                                                                 |
+| **Advantages**    | - Quick to write small scripts.<br>- Good for single-page scripts.   | - Keeps HTML clean.<br>- Reusable across multiple pages.<br>- Easier to maintain for large projects.    |
+| **Disadvantages** | - Makes HTML bulky.<br>- Harder to maintain for large scripts.       | - Extra HTTP request (can be optimized).                                                                |
+| **Example**       | `html <script> alert('Hello'); </script> `                           | `html <script src="script.js"></script>` and in `script.js` → `alert('Hello');`                         |
+
+Internal is good for small tasks; external is preferred for larger, reusable code.
+
+2.How does the browser load and execute JavaScript?
+Browsers handle JavaScript in 3 main steps:
+a)Browser reads HTML from top to bottom.
+
+b)When it finds a <script> tag:
+  -Internal script → Executes the code immediately.
+  -External script → Downloads the .js file, then executes it.
+
+c)After execution, the browser continues loading the rest of the page.
+
+💡 Important points:
+
+Scripts can stop the page from loading until they run (default behavior).
+
+To avoid blocking:
+  -Use <script defer> → waits until HTML is fully loaded, then runs scripts.
+  -Use <script async> → downloads in parallel and runs as soon as it’s ready (order may change).
+
+3.Why does script order matter?
+JavaScript runs from top to bottom in the order it appears in the HTML.
+
+If a script uses a function or variable that is defined in another script, the script with the definition must come first.
+
+If the order is wrong, the browser will show an error like ReferenceError because it can’t find the function or variable yet.
+
+Example:
+
+<script src="first.js"></script>  <!-- defines function sayHi() -->
+<script src="second.js"></script> <!-- uses sayHi() -->
+
+
+Works ✅ because first.js runs first.
+
+<script src="second.js"></script> 
+<script src="first.js"></script> 
+
+
+❌ Will cause error because sayHi() is not defined when second.js runs.
+
+Key Point:
+
+Always load scripts in the correct order to ensure dependencies work.
+
+4.Explain how errors are displayed in the console.
+When something goes wrong in your script, the browser shows errors in the console (press F12 → Console tab):
+
+Syntax Errors: Mistakes in the code structure.
+
+Example: if( { console.log("Hi"); } → Missing parentheses → SyntaxError.
+
+Runtime Errors: Code is correct, but fails when executed.
+
+Example: undefinedFunction() → ReferenceError: undefinedFunction is not defined.
+
+Logical Errors: Code runs but behaves incorrectly.
+
+These don’t show errors directly, but console can help debug with console.log().
+
+Error format in console:
+
+ErrorType: Description
+at file.js:lineNumber:columnNumber
+
+
+💡 Tip: Using console.error("Message") helps highlight errors in red.
+
+5.What is ECMAScript?
+ECMAScript (ES) is the standard specification that defines how JavaScript should work.
+
+JavaScript is the implementation of ECMAScript.
+
+Each version of JavaScript (ES5, ES6/2015, ES7, …) follows ECMAScript rules.
+
+Key points:
+
+ECMAScript defines:
+
+Syntax (how code is written)
+
+Types (Number, String, etc.)
+
+Statements (if, for, while)
+
+Keywords and reserved words
+
+Objects and functions
+
+Browser and engines (V8 in Chrome, SpiderMonkey in Firefox) implement these standards.
+
+💡 Example: ES6 introduced let, const, arrow functions, template literals, etc. – features that older versions (ES5) didn’t have.
+
+🔴 Expert
+
+How does the JavaScript engine convert source code into machine code?
+
+How does JavaScript interact with the browser?
+
+Why does blocking JavaScript affect page loading?
+
+What happens if two JS files define the same variable?
+
+Why is JavaScript single-threaded?
+
+🧠 GATE Level
+
+Explain how JavaScript execution affects webpage rendering.
+
+Why does placing JS in the <head> slow loading?
+
+Compare synchronous and asynchronous loading of JS.
+
+What happens if a JS file fails to load?
+
+Explain execution context in browsers.

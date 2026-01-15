@@ -1,7 +1,18 @@
-Javascript is a technology that we use to create websites.JS makes websites more interactive.
-JS is case sensitive
-We give instructions(code) to the computer
-The computer follows our instructions(running this code)
+How does the browser understand JavaScript?
+JavaScript is an interpreted language, which means that the computer understands it while running it. Some languages get processed before running, this is called compiling, but not JavaScript. The computer can just interpret JavaScript on the fly
+The "engine" that understands JavaScript will be called the interpreter here.
 
-JS Language
-Syntax-rules we have to follow when we use a programming languages
+A web page isn't just JavaScript. Web pages are written in three languages: HTML,CSS, and JavaScript.
+HTML determines what is on the page; the content of the page is in there. If there is a paragraph on the page, the HTML of the page contains a paragraph. And if there is a heading, HTML was used to add a heading, and so forth. HTML consists of elements, also called tags. They specify what is on the page. Here is a little sample that will create a web page with the text Hello world on it:
+
+<html>
+ <body>
+    Hello world!
+ </body>
+</html>
+
+When dealing with JavaScript, you will come across the term ECMAScript sooner or later. This is the specification or standardization for the JavaScript language.The current standard is ECMAScript 6 (also referred to as ES6). Browsers use this specification to support JavaScript (in addition to some other topics such as Document Object Model (DOM), which we'll see later). JavaScript has many implementations that might differ slightly, but ECMAScript can be considered the basic specification that the JavaScript implementation will definitely include.Using the browser console You may have seen this already, or not, but web browsers have a built-in option
+to see the code that makes the web page you are on possible. If you hit F12 on a
+Windows computer while you are in the web browser, or you right-click and select
+Inspect on macOS systems, you will see a screen appear, similar to the one in the
+following screen

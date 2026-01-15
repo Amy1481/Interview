@@ -1,1 +1,0 @@
-Variable is like a container,we can save a value & then use it later

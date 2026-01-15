@@ -1,2 +1,0 @@
-// JS code
-alert("Hello");

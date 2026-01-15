@@ -1,0 +1,63 @@
+🟢 Easy
+
+What is a variable?
+
+What is let?
+
+What is const?
+
+What is a data type?
+
+What is a string?
+
+🟡 Medium
+
+Difference between var, let, const
+
+What is undefined?
+
+What is null?
+
+Difference between == and ===
+
+What is a Boolean?
+
+🔵 Hard
+
+Explain type conversion.
+
+Why is JavaScript loosely typed?
+
+What is scope?
+
+Why should const be used more?
+
+Explain logical operators.
+
+🔴 Expert
+
+Why does "5"+5 give "55"?
+
+Why is "5"-2 different from "5"+2?
+
+Explain type coercion.
+
+Why is BigInt required?
+
+Why does Symbol exist?
+
+🧠 GATE Level
+
+Predict output:
+
+let x = "10" + 2 - 1;
+console.log(x);
+
+
+Why does typeof null return "object"?
+
+How does JS store different data types?
+
+Explain strict vs loose comparison.
+
+Why does Boolean("0") return true?

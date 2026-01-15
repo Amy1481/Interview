@@ -1,0 +1,65 @@
+🟢 Easy
+
+What is an array?
+
+What is an object?
+
+What is an index?
+
+What is a key?
+
+What is push()?
+
+🟡 Medium
+
+Difference between array and object.
+
+How do you access object data?
+
+How do you add items to array?
+
+What is nested data?
+
+What is length?
+
+🔵 Hard
+
+What happens when arrays are copied?
+
+Why are objects passed by reference?
+
+What happens if two variables refer to same object?
+
+Difference between shallow and deep copy.
+
+How to loop over array of objects?
+
+🔴 Expert
+
+Why do arrays behave like objects internally?
+
+How does memory reference work?
+
+Why does modifying one object affect another?
+
+How does JS store arrays?
+
+Why are objects not ordered?
+
+🧠 GATE Level
+
+Predict output:
+
+let a = [1,2];
+let b = a;
+b.push(3);
+console.log(a);
+
+
+Explain reference vs value.
+
+Why does a == b return true?
+
+How is memory allocated to arrays?
+
+Why is JSON object-like?
