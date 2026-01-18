@@ -9,10 +9,11 @@ void swapNumbers(int &a,int &b){
 
 int main() {
     int x,y;
-    cout << "Enter two numbers: ";
+    cout << "Enter two numbers: "<< endl;
     cin >> x >> y;
+    cout << "The initial value of x is " << x << " & y is " << y << endl;
 
     swapNumbers(x,y);
-    cout << "The value of x is " << x << "& y is " << y;
+    cout << "After swap, the value of x is " << x << " & y is " << y << endl;
     return 0;
 }

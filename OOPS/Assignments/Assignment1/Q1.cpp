@@ -10,7 +10,7 @@ enum Day
     Thursday,
     Friday,
     Saturday
-}
+};
 
 int
 main()
@@ -18,8 +18,7 @@ main()
     int dayNumber;
     cout << "Enter day number (1-7): ";
     cin >> dayNumber;
-    Day day = (Day)dayNumber;
-    switch (day)
+    switch (dayNumber)
     {
     case Sunday:
         cout << "Sunday";
@@ -43,7 +42,7 @@ main()
         cout << "Saturday";
         break;
     default:
-        cout << "Invalid day"
+        cout << "Invalid day";
     }
     return 0;
 }
